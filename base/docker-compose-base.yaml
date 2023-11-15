@@ -28,9 +28,9 @@ services:
     environment:
       - CORE_PEER_ID=peer0.dyno.example.com
       - CORE_PEER_ADDRESS=peer0.dyno.example.com:7051
-      - CORE_PEER_LISTENADDRESS=192.168.1.193:7051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:7051
       - CORE_PEER_CHAINCODEADDRESS=peer0.dyno.example.com:7052
-      - CORE_PEER_CHAINCODELISTENADDRESS=192.168.1.193:7052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052
       - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.dyno.example.com:7051
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.dyno.example.com:7051
       - CORE_PEER_LOCALMSPID=Org1MSP
@@ -50,9 +50,9 @@ services:
     environment:
       - CORE_PEER_ID=peer1.dyno.example.com
       - CORE_PEER_ADDRESS=peer1.dyno.example.com:8051
-      - CORE_PEER_LISTENADDRESS=192.168.1.193:8051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:8051
       - CORE_PEER_CHAINCODEADDRESS=peer1.dyno.example.com:8052
-      - CORE_PEER_CHAINCODELISTENADDRESS=192.168.1.193:8052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:8052
       - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer1.dyno.example.com:8051
       - CORE_PEER_GOSSIP_BOOTSTRAP=peer1.dyno.example.com:8051
       - CORE_PEER_LOCALMSPID=Org2MSP
