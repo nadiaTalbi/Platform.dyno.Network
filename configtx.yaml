@@ -23,7 +23,7 @@ Organizations:
     - &Org1
         Name: Org1MSP
         ID: Org1MSP
-        MSPDir: crypto-config/peerOrganizations/dyno.example.com/msp
+        MSPDir: crypto-config/peerOrganizations/Dyno.example.com/msp
         Policies:
             Readers:
                 Type: Signature
