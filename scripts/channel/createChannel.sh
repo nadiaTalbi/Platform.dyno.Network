@@ -14,6 +14,6 @@ peer channel create -o orderer.example.com:7050 /opt/gopath/src/github.com/hyper
 
 echo 
 echo "Channel created, joining dyno..."
-peer channel join -b genesis.block
+peer channel join -b mychannel.block
 #peer channel join: This is the command to make a peer join a channel
 #-b dynochannel.block: Specifies the path to the latest channel configuration block file 
