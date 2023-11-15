@@ -7,7 +7,7 @@ OrdererOrgs:
 
 PeerOrgs:
   - Name: Dyno
-    Domain: Dyno.example.com
+    Domain: dyno.example.com
     EnableNodeOUs: true
     Template:
       Count: 1
