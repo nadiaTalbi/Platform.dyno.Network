@@ -7,8 +7,8 @@ version: '2'
 
 volumes:
   orderer.example.com:
-  peer0.org1.example.com:
-  peer0.org2.example.com:
+  peer0.dyno.example.com:
+  peer1.dyno.example.com:
 
 networks:
   byfn:
@@ -31,7 +31,7 @@ services:
     networks:
       - byfn
 
-  peer0.org2.example.com:
+  peer1.dyno.example.com:
     container_name: peer1.dyno.example.com
     extends:
       file:  base/docker-compose-base.yaml
