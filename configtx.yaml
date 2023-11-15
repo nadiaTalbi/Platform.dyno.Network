@@ -111,7 +111,7 @@ Channel: &ChannelDefaults
 
 Profiles:
 
-    TwoOrgsOrdererGenesis:
+    OrgsOrdererGenesis:
         <<: *ChannelDefaults
         Orderer:
             <<: *OrdererDefaults
@@ -123,7 +123,7 @@ Profiles:
             SampleConsortium:
                 Organizations:
                     - *Org1
-    TwoOrgsChannel:
+    OrgsChannel:
         Consortium: SampleConsortium
         <<: *ChannelDefaults
         Application:
