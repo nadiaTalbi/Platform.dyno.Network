@@ -6,7 +6,7 @@
     "jsRules": {},
     "rules": {
         "indent": [true, "spaces", 4],
-        "linebreak-style": [true, "LF"],
+        "linebreak-style": [false , "LF"],
         "quotemark": [true, "single"],
         "semicolon": [true, "always"],
         "no-console": false,
