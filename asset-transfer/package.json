@@ -12,7 +12,7 @@
       "lint": "tslint -c tslint.json 'src/**/*.ts'",
       "pretest": "npm run lint",
       "test": "nyc mocha -r ts-node/register src/**/*.spec.ts",
-      "start": "fabric-chaincode-node start --peer.address localhost:7051 --chaincode-id-name mycc",
+      "start": "CORE_PEER_TLS_ROOTCERT_FILE=../../config/peerOrganizations/dyno.example.com/msp/tlscacerts/tlsca.dyno.example.com-cert.pem fabric-chaincode-node start --peer.address 192.168.1.193:7051 --chaincode-id-name mycc",
       "build": "tsc",
       "build:watch": "tsc -w",
       "prepublishOnly": "npm run build",
