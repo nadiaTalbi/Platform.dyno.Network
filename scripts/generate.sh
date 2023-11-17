@@ -6,7 +6,7 @@ echo "Generating cryto material for peers..."
 
 ../bin/cryptogen generate --config=./crypto-config.yaml #This command uses the cryptogen tool to generate cryptographic material for the network based on the configuration specified in crypto-config.yaml
 
-[ -d crypto-config ] || mkdir crypto-config #checks if the crypto-config exists, if not it will be created.
+[ -d crypto-config ] || mkdir ../consortium/crypto-config #checks if the crypto-config exists, if not it will be created.
 
 echo "Generating channel artifacts and genesis block..."
 
