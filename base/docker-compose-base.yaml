@@ -64,3 +64,24 @@ services:
     ports:
       - 8051:8051
 
+  couchdb0: 
+    container_name: couchdb0
+    extends: 
+      file: peer-base.yaml
+      service: couchdb-base
+    environment:
+      - COUCHDB_USER=dyno
+      - COUCHDB_PASSWORD=root
+    ports:
+      - 5984:5984
+
+  couchdb1: 
+    container_name: couchdb1
+    extends: 
+      file: peer-base.yaml
+      service: couchdb-base
+    environment:
+      - COUCHDB_USER=dyno
+      - COUCHDB_PASSWORD=root
+    ports:
+      - 5985:5985

@@ -11,7 +11,7 @@ volumes:
   peer1.dyno.example.com:
 
 networks:
-  byfn:
+  dyno:
 
 services:
 
@@ -21,7 +21,7 @@ services:
       service: orderer.example.com
     container_name: orderer.example.com
     networks:
-      - byfn
+      - dyno
 
   peer0.dyno.example.com:
     container_name: peer0.dyno.example.com
@@ -29,7 +29,7 @@ services:
       file:  base/docker-compose-base.yaml
       service: peer0.dyno.example.com
     networks:
-      - byfn
+      - dyno
 
   peer1.dyno.example.com:
     container_name: peer1.dyno.example.com
@@ -37,7 +37,7 @@ services:
       file:  base/docker-compose-base.yaml
       service: peer1.dyno.example.com
     networks:
-      - byfn
+      - dyno
 
 
   cli:
@@ -71,4 +71,4 @@ services:
       - peer0.dyno.example.com
       - peer1.dyno.example.com
     networks:
-      - byfn
+      - dyno
