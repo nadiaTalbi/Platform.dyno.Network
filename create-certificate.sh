@@ -219,11 +219,11 @@ certificatesForOrderer() {
 #sleep 6
 #docker ps
 
-infoln "Create Dyno Indentities"
-certificatesForDyno
+#infoln "Create Dyno Indentities"
+#certificatesForDyno
 
-#infoln "Create Orderer Indentities"
-#certificatesForOrderer
+infoln "Create Orderer Indentities"
+certificatesForOrderer
 
 #infoln "Generate CCP file for all organizations"
 #consortium/ccp-generate.sh
